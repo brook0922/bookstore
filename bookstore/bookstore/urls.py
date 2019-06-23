@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('main/', include('main.urls', namespace='main')),
     path('about/', include('about.urls', namespace='about')),
+    path('book/', include('book.urls', namespace='book')),
     re_path('.*', views.main),
 ]

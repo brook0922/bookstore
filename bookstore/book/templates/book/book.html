@@ -1,0 +1,23 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+<head>
+<title>網路書店</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+{% include 'main/menu.html' %}
+<h2>書中自有顏如玉 書中自有黃金屋</h2>
+<br> 
+{% for book in books %}
+  <h3>{{ book.title }}</h3>
+  <div class="bookContent">{{ book.content }}</div>
+  <div class="bookOther">作者：{{ book.author }}</div>
+  <div class="bookOther">出版社：{{ book.publisher }}</div>
+  <div class="bookOther">售價：{{ book.price }}</div>
+  <p>發表時間：{{ book.pubDateTime|date:'Y-m-d H:i' }}</p>
+  <hr>
+{% endfor %}
+</body>
+</html>

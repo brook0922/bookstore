@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  height: 50%;
+}
+
+body {
+  padding: 20px;
+  background: url("/static/main/img/background_2.jpg") fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+}
+
+ul#menu {
+  margin-bottom: 30px;
+  text-align: right;
+  overflow: auto;
+}
+
+ul#menu li {
+  display: inline-block;
+}
+
+
+.bookOther {
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight:bold;
+}
+
+p {
+  font-size: 0.9em;
+  color: Fuchsia;
+}
+
+.bookContent {
+  display: inline-block;
+  font-size: 0.9em;

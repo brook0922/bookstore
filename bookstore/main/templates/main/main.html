@@ -1,0 +1,14 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+<head>
+<title>網路書店</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+{% include 'main/menu.html' %}
+<h2>{{ msg }}</h2>
+<p><img src="/static/main/img/bookstore.png" width="65%"><br></p>
+</body>
+</html>
